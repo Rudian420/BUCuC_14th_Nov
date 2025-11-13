@@ -5016,10 +5016,10 @@ ${message}
                 const sbTitle = document.getElementById('sbSectionTitle');
                 if (sbTitle) {
                     if (yearKey === '2020' || yearKey === '2019') {
-                        sbTitle.textContent = `Meet Our SB Members`;
+                        sbTitle.textContent = `Meet Our Secretaries`;
                         console.log(`Updated SB title for years ${yearKey}:`, sbTitle.textContent);
                     } else {
-                        sbTitle.textContent = 'Meet Our SB Members';
+                        sbTitle.textContent = 'Meet Our Secretaries';
                     }
                 }
 
