@@ -2002,7 +2002,7 @@ https://templatemo.com/tm-583-festava-live
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <h2 class="mb-4">Our Advisors</h2>
+                        <h2 class="mb-4">Meet Our Advisor & Co-Advisor</h2>
                     </div>
 
                     <!-- Advisor (Left Side) -->
