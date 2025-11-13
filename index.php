@@ -3189,7 +3189,7 @@ https://templatemo.com/tm-583-festava-live
                                     <div class="event-card-bg"
                                         style="background-image: url('images/slide3.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">Panel Handover</div>
+                                        <div class="event-title">Panel 2025-26 Handover</div>
                                         <div class="event-time">11 February, 2025</div>
                                         <div class="event-by">Tuesday</div>
                                     </div>
@@ -3199,7 +3199,7 @@ https://templatemo.com/tm-583-festava-live
                                     <div class="event-card-bg"
                                         style="background-image: url('images/slide4.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">BUCuC Iftar</div>
+                                        <div class="event-title">BUCuC Iftar 2025</div>
                                         <div class="event-time">10 March, 2025</div>
                                         <div class="event-by">Monday</div>
                                     </div>
@@ -3219,7 +3219,7 @@ https://templatemo.com/tm-583-festava-live
                                     <div class="event-card-bg"
                                         style="background-image: url('images/slide1.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">উচ্ছ্বাসে স্পন্দন</div>
+                                        <div class="event-title">Participation at উচ্ছ্বাসে স্পন্দন</div>
                                         <div class="event-time">9 February, 2025</div>
                                         <div class="event-by">Sunday</div>
                                     </div>
