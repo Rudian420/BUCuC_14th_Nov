@@ -1,0 +1,20 @@
+# Test Google Apps Script Directly
+
+Use this curl command to test your GAS directly:
+
+curl -X POST \
+  "https://script.google.com/macros/s/AKfycbyCDhAe3iUCn9zD7RgB_AdKnoEzAx6x3InQVrwaCuFAAtg7CIAEDfW77IoXHKhuCcxy_A/exec" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "action": "update",
+    "studentId": "TEST_STUDENT_ID",
+    "position": "GB"
+  }'
+
+Expected successful response:
+{
+  "success": true,
+  "message": "Position updated successfully"
+}
+
+If you get HTML instead of JSON, your Google Apps Script has an error.
