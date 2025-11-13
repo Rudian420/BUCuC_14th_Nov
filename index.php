@@ -2073,7 +2073,7 @@ https://templatemo.com/tm-583-festava-live
                 <div class="row justify-content-center">
 
                     <div class="col-12 text-center">
-                        <h2 class="mb-4">Meet Panel Members</h2>
+                        <h2 class="mb-4">Meet Presidential Panel</h2>
                     </div>
                     <!-- Panel Year Selector -->
                     <div class="col-12 text-center mb-4">
@@ -2795,7 +2795,7 @@ https://templatemo.com/tm-583-festava-live
         <!-- SB Members Section -->
         <section class="sb-section" id="section_4">
             <div class="container">
-                <h2 class="sb-section-title" id="sbSectionTitle">Meet Our SB Members</h2>
+                <h2 class="sb-section-title" id="sbSectionTitle">Meet Our Secretaries</h2>
 
                 <!-- SB Members Container -->
                 <div class="sb-members-container" id="sbMembersContainer">
@@ -3180,7 +3180,7 @@ https://templatemo.com/tm-583-festava-live
                                         style="background-image: url('images/slide2.jpg');"></div>
                                     <div class="event-card-content">
                                         <div class="event-title">Rhythm Revive 25.0</div>
-                                        <div class="event-time">17 April, 2025</div>
+                                        <div class="event-time">17th April, 2025</div>
                                         <div class="event-by">Thursday</div>
                                     </div>
                                 </div>
@@ -3200,7 +3200,7 @@ https://templatemo.com/tm-583-festava-live
                                         style="background-image: url('images/slide4.jpg');"></div>
                                     <div class="event-card-content">
                                         <div class="event-title">BUCuC Iftar 2025</div>
-                                        <div class="event-time">10 March, 2025</div>
+                                        <div class="event-time">10th March, 2025</div>
                                         <div class="event-by">Monday</div>
                                     </div>
                                 </div>
@@ -3210,7 +3210,7 @@ https://templatemo.com/tm-583-festava-live
                                         style="background-image: url('images/slide5.jpg');"></div>
                                     <div class="event-card-content">
                                         <div class="event-title">বৈশাখী উৎসব ১৪৩২</div>
-                                        <div class="event-time">22 April, 2025</div>
+                                        <div class="event-time">22nd April, 2025</div>
                                         <div class="event-by">Tuesday</div>
                                     </div>
                                 </div>
@@ -3220,7 +3220,7 @@ https://templatemo.com/tm-583-festava-live
                                         style="background-image: url('images/slide1.jpg');"></div>
                                     <div class="event-card-content">
                                         <div class="event-title">Participation at উচ্ছ্বাসে স্পন্দন</div>
-                                        <div class="event-time">9 February, 2025</div>
+                                        <div class="event-time">9th February, 2025</div>
                                         <div class="event-by">Sunday</div>
                                     </div>
                                 </div>
