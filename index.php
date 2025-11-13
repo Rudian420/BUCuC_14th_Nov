@@ -3190,7 +3190,7 @@ https://templatemo.com/tm-583-festava-live
                                         style="background-image: url('images/slide3.jpg');"></div>
                                     <div class="event-card-content">
                                         <div class="event-title">Panel 2025-26 Handover</div>
-                                        <div class="event-time">11 February, 2025</div>
+                                        <div class="event-time">11th February, 2025</div>
                                         <div class="event-by">Tuesday</div>
                                     </div>
                                 </div>
