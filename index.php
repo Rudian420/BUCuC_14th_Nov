@@ -3219,7 +3219,7 @@ https://templatemo.com/tm-583-festava-live
                                     <div class="event-card-bg"
                                         style="background-image: url('images/slide1.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">Participation at উচ্ছ্বাসে স্পন্দন</div>
+                                        <div class="event-title">Participation at উচ্ছ্বাসে স্পন্দন by AUSTCC</div>
                                         <div class="event-time">9th February, 2025</div>
                                         <div class="event-by">Sunday</div>
                                     </div>
