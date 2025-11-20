@@ -3016,7 +3016,7 @@ https://templatemo.com/tm-583-festava-live
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/Panel_24_25/Secreteries/Diana_Halder_Momo.jpg"
+                                    <img src="images/Panel_24_25/Secreteries/Dino.jpg"
                                         onerror="this.src='images/placeholder.png'" />
                                     <div class="overlay">
                                         <a
