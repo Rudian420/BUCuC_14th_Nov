@@ -2199,7 +2199,7 @@ https://templatemo.com/tm-583-festava-live
                                                 </div>
                                   
                                                 <div class="col-6 col-md-3 text-center">
-                                                    <div class="panel-card"><img src="images/Panel_24_25/Secreteries/Maria_Kamal_Katha.jpg" class="img-fluid" alt="Maria_Kamal_Katha.jpg">
+                                                    <div class="panel-card"><img src="images/Panel_24_25/Secreteries/Katha.jpg" class="img-fluid" alt="Maria_Kamal_Katha.jpg">
                                                         <div class="name">Maria Kamal Katha</div>
                                                     </div>
                                                 </div>
