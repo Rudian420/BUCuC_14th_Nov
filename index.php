@@ -2215,7 +2215,7 @@ https://templatemo.com/tm-583-festava-live
                                                 </div>
                                            
                                                 <div class="col-6 col-md-3 text-center">
-                                                    <div class="panel-card"><img src="images/Panel_24_25/Secreteries/Rubaba_Khijir_Nusheen.jpg" class="img-fluid" alt="Rubaba_Khijir_Nusheen.jpg">
+                                                    <div class="panel-card"><img src="images/Panel_24_25/Secreteries/Rubu.jpg" class="img-fluid" alt="Rubaba_Khijir_Nusheen.jpg">
                                                         <div class="name">Rubaba Khijir Nusheen</div>
                                                     </div>
                                                 </div>
