@@ -1164,9 +1164,9 @@ $signupEnabled = getSignupStatus();
             position: relative;
             border-radius: 18px;
             overflow: hidden;
-            background: linear-gradient(135deg, rgba(231, 111, 44, 0.15), rgba(243, 211, 92, 0.15));
-            border: 2px solid transparent;
-            box-shadow: 0 4px 24px 0 rgba(231, 111, 44, 0.3);
+            background: linear-gradient(135deg, rgba(231, 111, 44, 0.4), rgba(243, 211, 92, 0.4));
+            border: 3px solid rgba(243, 211, 92, 0.6);
+            box-shadow: 0 4px 24px 0 rgba(231, 111, 44, 0.6), inset 0 0 30px rgba(243, 211, 92, 0.2);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
             min-height: 320px;
@@ -1185,7 +1185,7 @@ $signupEnabled = getSignupStatus();
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
             transition: left 0.5s;
         }
 
@@ -1195,9 +1195,9 @@ $signupEnabled = getSignupStatus();
 
         .see-more-button:hover {
             transform: scale(1.05) translateY(-8px);
-            box-shadow: 0 12px 40px 0 rgba(243, 211, 92, 0.5), 0 0 0 4px rgba(231, 111, 44, 0.6);
-            border-color: rgba(243, 211, 92, 0.8);
-            background: linear-gradient(135deg, rgba(231, 111, 44, 0.25), rgba(243, 211, 92, 0.25));
+            box-shadow: 0 12px 40px 0 rgba(243, 211, 92, 0.8), 0 0 0 4px rgba(231, 111, 44, 0.9), inset 0 0 50px rgba(243, 211, 92, 0.4);
+            border-color: rgba(243, 211, 92, 1);
+            background: linear-gradient(135deg, rgba(231, 111, 44, 0.6), rgba(243, 211, 92, 0.6));
         }
 
         .see-more-button-content {
@@ -1209,46 +1209,52 @@ $signupEnabled = getSignupStatus();
 
         .see-more-icon {
             font-size: 3rem;
-            color: #f3d35c;
+            color: #ffd700;
             margin-bottom: 1rem;
             display: block;
             transition: transform 0.3s, color 0.3s;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
         }
 
         .see-more-button:hover .see-more-icon {
             transform: rotate(360deg) scale(1.2);
             color: #ffd700;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(243, 211, 92, 0.8);
         }
 
         .see-more-text {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #fff;
             margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #f3d35c, #e76f2c);
+            background: linear-gradient(135deg, #ffd700, #f3d35c, #e76f2c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             transition: all 0.3s;
+            text-shadow: 0 2px 10px rgba(243, 211, 92, 0.5);
+            filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6));
         }
 
         .see-more-button:hover .see-more-text {
-            background: linear-gradient(135deg, #ffd700, #f3d35c);
+            background: linear-gradient(135deg, #ffd700, #f3d35c, #ffd700);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             transform: scale(1.1);
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 1));
         }
 
         .see-more-subtext {
             font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
-            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
             transition: color 0.3s;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
         }
 
         .see-more-button:hover .see-more-subtext {
-            color: rgba(255, 255, 255, 0.9);
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
 
         @media (max-width: 600px) {
