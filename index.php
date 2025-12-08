@@ -1165,7 +1165,7 @@ $signupEnabled = getSignupStatus();
             border-radius: 18px;
             overflow: hidden;
             background: linear-gradient(135deg, rgba(231, 111, 44, 0.4), rgba(243, 211, 92, 0.4));
-            border: 3px solid rgb(255, 245, 209);
+            border: 3px solid rgba(253, 237, 179, 0.6);
             box-shadow: 0 4px 24px 0 rgba(231, 111, 44, 0.6), inset 0 0 30px rgba(243, 211, 92, 0.2);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
@@ -1209,7 +1209,7 @@ $signupEnabled = getSignupStatus();
 
         .see-more-icon {
             font-size: 3rem;
-            color: #ffd700;
+            color:rgb(252, 252, 252);
             margin-bottom: 1rem;
             display: block;
             transition: transform 0.3s, color 0.3s;
@@ -1218,7 +1218,7 @@ $signupEnabled = getSignupStatus();
 
         .see-more-button:hover .see-more-icon {
             transform: rotate(360deg) scale(1.2);
-            color: #ffd700;
+            color:rgb(255, 255, 255);
             text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(243, 211, 92, 0.8);
         }
 
