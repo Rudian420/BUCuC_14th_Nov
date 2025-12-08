@@ -1159,15 +1159,18 @@ $signupEnabled = getSignupStatus();
             margin-bottom: 0.2rem;
         }
 
-        /* See More Button Styles */
+        /* See More Button - Modern Glassmorphism Style */
         .see-more-button {
             position: relative;
-            border-radius: 18px;
-            overflow: hidden;
-            background: linear-gradient(135deg, rgba(231, 111, 44, 0.4), rgba(243, 211, 92, 0.4));
-            border: 3px solid rgba(253, 237, 179, 0.6);
-            box-shadow: 0 4px 24px 0 rgba(231, 111, 44, 0.6), inset 0 0 30px rgba(243, 211, 92, 0.2);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 20px;
+            overflow: visible;
+            background: rgba(20, 20, 30, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
             cursor: pointer;
             min-height: 320px;
             display: flex;
@@ -1175,86 +1178,150 @@ $signupEnabled = getSignupStatus();
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            backdrop-filter: blur(10px);
+            isolation: isolate;
         }
 
+        /* Animated gradient border on hover */
         .see-more-button::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.51), transparent);
-            transition: left 0.5s;
+            inset: -2px;
+            border-radius: 20px;
+            padding: 2px;
+            background: linear-gradient(45deg, #e76f2c, #f3d35c, #e76f2c, #f3d35c);
+            background-size: 300% 300%;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            animation: gradientRotate 3s linear infinite;
+            transition: opacity 0.5s;
+            z-index: -1;
+        }
+
+        @keyframes gradientRotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .see-more-button:hover::before {
-            left: 100%;
+            opacity: 1;
+        }
+
+        /* Floating particles effect */
+        .see-more-button::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(231, 111, 44, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(243, 211, 92, 0.3) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.5s;
+            pointer-events: none;
+        }
+
+        .see-more-button:hover::after {
+            opacity: 1;
+            animation: particleFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes particleFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.05); }
         }
 
         .see-more-button:hover {
-            transform: scale(1.05) translateY(-8px);
-            box-shadow: 0 12px 40px 0 rgba(243, 211, 92, 0.8), 0 0 0 4px rgba(231, 111, 44, 0.9), inset 0 0 50px rgba(243, 211, 92, 0.4);
-            border-color: rgba(243, 211, 92, 1);
-            background: linear-gradient(135deg, rgba(231, 111, 44, 0.6), rgba(243, 211, 92, 0.6));
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 
+                0 20px 60px rgba(231, 111, 44, 0.4),
+                0 0 0 1px rgba(243, 211, 92, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            background: rgba(25, 25, 35, 0.85);
         }
 
         .see-more-button-content {
             position: relative;
             z-index: 2;
             text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
         }
 
+        /* Modern icon with pulse effect */
         .see-more-icon {
-            font-size: 3rem;
-            color:rgb(252, 252, 252);
-            margin-bottom: 1rem;
-            display: block;
-            transition: transform 0.3s, color 0.3s;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+            font-size: 2.5rem;
+            color: #f3d35c;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            filter: drop-shadow(0 0 8px rgba(243, 211, 92, 0.5));
         }
 
         .see-more-button:hover .see-more-icon {
-            transform: rotate(360deg) scale(1.2);
-            color:rgb(255, 255, 255);
-            text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(243, 211, 92, 0.8);
+            transform: translateX(8px) scale(1.15);
+            color: #ffd700;
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+            animation: iconPulse 1.5s ease-in-out infinite;
         }
 
+        @keyframes iconPulse {
+            0%, 100% { transform: translateX(8px) scale(1.15); }
+            50% { transform: translateX(12px) scale(1.2); }
+        }
+
+        /* Bold modern text */
         .see-more-text {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg,rgb(252, 229, 210),rgb(253, 230, 147),rgb(255, 255, 255));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transition: all 0.3s;
-            text-shadow: 0 2px 10px rgba(243, 211, 92, 0.5);
-            filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6));
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0.8rem;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.4s;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .see-more-text::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #f3d35c, transparent);
+            transition: transform 0.4s;
         }
 
         .see-more-button:hover .see-more-text {
-            background: linear-gradient(135deg, #ffd700, #f3d35c, #ffd700);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transform: scale(1.1);
-            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 1));
+            color: #f3d35c;
+            text-shadow: 
+                0 0 20px rgba(243, 211, 92, 0.6),
+                0 2px 10px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
         }
 
+        .see-more-button:hover .see-more-text::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        /* Subtle subtext */
         .see-more-subtext {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 500;
-            transition: color 0.3s;
-            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s;
+            margin-top: 0.5rem;
         }
 
         .see-more-button:hover .see-more-subtext {
-            color: #fff;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 3px;
         }
 
         @media (max-width: 600px) {
@@ -3273,7 +3340,7 @@ https://templatemo.com/tm-583-festava-live
                             <div class="event-schedule-header">Past Events</div>
                             <div class="event-cards-grid">
                                 <!-- Card 1 -->
-                                <div class="event-card" onclick="window.location.href='past_events.html#pop-night'" style="cursor: pointer;">
+                                <div class="event-card" onclick="window.location.href='past_events.html#event-6'" style="cursor: pointer;">
                                     <div class="event-card-bg"
                                         style="background-image: url('images/pls.jpg');"></div>
                                     <div class="event-card-content">
@@ -3283,7 +3350,7 @@ https://templatemo.com/tm-583-festava-live
                                     </div>
                                 </div>
                                 <!-- Card 2 -->
-                                <div class="event-card" onclick="window.location.href='past_events.html#rock-roll'" style="cursor: pointer;">
+                                <div class="event-card" onclick="window.location.href='past_events.html#event-7'" style="cursor: pointer;">
                                     <div class="event-card-bg"
                                         style="background-image: url('images/slide8.jpg');"></div>
                                     <div class="event-card-content">
@@ -3293,7 +3360,7 @@ https://templatemo.com/tm-583-festava-live
                                     </div>
                                 </div>
                                 <!-- Card 3 -->
-                                <div class="event-card" onclick="window.location.href='past_events.html#dj-night'" style="cursor: pointer;">
+                                <div class="event-card" onclick="window.location.href='past_events.html#event-8'" style="cursor: pointer;">
                                     <div class="event-card-bg"
                                         style="background-image: url('images/slide9.jpg');"></div>
                                     <div class="event-card-content">
@@ -3313,7 +3380,7 @@ https://templatemo.com/tm-583-festava-live
                                     </div>
                                 </div>
                                 <!-- Card 5 -->
-                                <div class="event-card" onclick="window.location.href='past_events.html#free-styles'" style="cursor: pointer;">
+                                <div class="event-card" onclick="window.location.href='past_events.html#event-9'" style="cursor: pointer;">
                                     <div class="event-card-bg"
                                         style="background-image: url('images/Wild.jpg');"></div>
                                     <div class="event-card-content">
@@ -3325,9 +3392,9 @@ https://templatemo.com/tm-583-festava-live
                                 <!-- See More Button -->
                                 <a href="past_events.html" class="see-more-button">
                                     <div class="see-more-button-content">
-                                        <i class="fas fa-arrow-right see-more-icon"></i>
-                                        <div class="see-more-text">See More</div>
-                                        <div class="see-more-subtext">Explore All Events</div>
+                                        <i class="fas fa-chevron-right see-more-icon"></i>
+                                        <div class="see-more-text">View All</div>
+                                        <div class="see-more-subtext">Past Events</div>
                                     </div>
                                 </a>
                             </div>
