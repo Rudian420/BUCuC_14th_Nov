@@ -1159,6 +1159,98 @@ $signupEnabled = getSignupStatus();
             margin-bottom: 0.2rem;
         }
 
+        /* See More Button Styles */
+        .see-more-button {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(231, 111, 44, 0.15), rgba(243, 211, 92, 0.15));
+            border: 2px solid transparent;
+            box-shadow: 0 4px 24px 0 rgba(231, 111, 44, 0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .see-more-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .see-more-button:hover::before {
+            left: 100%;
+        }
+
+        .see-more-button:hover {
+            transform: scale(1.05) translateY(-8px);
+            box-shadow: 0 12px 40px 0 rgba(243, 211, 92, 0.5), 0 0 0 4px rgba(231, 111, 44, 0.6);
+            border-color: rgba(243, 211, 92, 0.8);
+            background: linear-gradient(135deg, rgba(231, 111, 44, 0.25), rgba(243, 211, 92, 0.25));
+        }
+
+        .see-more-button-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .see-more-icon {
+            font-size: 3rem;
+            color: #f3d35c;
+            margin-bottom: 1rem;
+            display: block;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .see-more-button:hover .see-more-icon {
+            transform: rotate(360deg) scale(1.2);
+            color: #ffd700;
+        }
+
+        .see-more-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #f3d35c, #e76f2c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: all 0.3s;
+        }
+
+        .see-more-button:hover .see-more-text {
+            background: linear-gradient(135deg, #ffd700, #f3d35c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: scale(1.1);
+        }
+
+        .see-more-subtext {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        .see-more-button:hover .see-more-subtext {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
         @media (max-width: 600px) {
             .event-schedule-header {
                 font-size: 2rem;
@@ -3224,6 +3316,14 @@ https://templatemo.com/tm-583-festava-live
                                         <div class="event-by">Sunday</div>
                                     </div>
                                 </div>
+                                <!-- See More Button -->
+                                <a href="past_events.html" class="see-more-button">
+                                    <div class="see-more-button-content">
+                                        <i class="fas fa-arrow-right see-more-icon"></i>
+                                        <div class="see-more-text">See More</div>
+                                        <div class="see-more-subtext">Explore All Events</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
