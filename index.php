@@ -1165,7 +1165,7 @@ $signupEnabled = getSignupStatus();
             border-radius: 18px;
             overflow: hidden;
             background: linear-gradient(135deg, rgba(231, 111, 44, 0.4), rgba(243, 211, 92, 0.4));
-            border: 3px solid rgba(243, 211, 92, 0.6);
+            border: 3px solid rgb(255, 245, 209);
             box-shadow: 0 4px 24px 0 rgba(231, 111, 44, 0.6), inset 0 0 30px rgba(243, 211, 92, 0.2);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
@@ -1185,7 +1185,7 @@ $signupEnabled = getSignupStatus();
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgb(255, 255, 255), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.51), transparent);
             transition: left 0.5s;
         }
 
