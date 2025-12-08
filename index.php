@@ -1226,7 +1226,7 @@ $signupEnabled = getSignupStatus();
             font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #ffd700, #f3d35c, #e76f2c);
+            background: linear-gradient(135deg,rgb(255, 115, 0),rgb(252, 206, 39),rgb(255, 255, 255));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
