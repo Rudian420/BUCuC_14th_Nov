@@ -3275,31 +3275,31 @@ https://templatemo.com/tm-583-festava-live
                                 <!-- Card 1 -->
                                 <div class="event-card" onclick="window.location.href='past_events.html#pop-night'" style="cursor: pointer;">
                                     <div class="event-card-bg"
-                                        style="background-image: url('images/slide2.jpg');"></div>
+                                        style="background-image: url('images/pls.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">Rhythm Revive 25.0</div>
-                                        <div class="event-time">17th April, 2025</div>
-                                        <div class="event-by">Thursday</div>
+                                        <div class="event-title">Club Leadership Bootcamp 2025</div>
+                                        <div class="event-time">10 October, 2025</div>
+                                        <div class="event-by">Friday</div>
                                     </div>
                                 </div>
                                 <!-- Card 2 -->
                                 <div class="event-card" onclick="window.location.href='past_events.html#rock-roll'" style="cursor: pointer;">
                                     <div class="event-card-bg"
-                                        style="background-image: url('images/slide3.jpg');"></div>
+                                        style="background-image: url('images/slide8.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">Panel 2025-26 Handover</div>
-                                        <div class="event-time">11th February, 2025</div>
-                                        <div class="event-by">Tuesday</div>
+                                        <div class="event-title">Rhythm Revive 25.1</div>
+                                        <div class="event-time">7 September, 2025</div>
+                                        <div class="event-by">Sunday</div>
                                     </div>
                                 </div>
                                 <!-- Card 3 -->
                                 <div class="event-card" onclick="window.location.href='past_events.html#dj-night'" style="cursor: pointer;">
                                     <div class="event-card-bg"
-                                        style="background-image: url('images/slide4.jpg');"></div>
+                                        style="background-image: url('images/slide9.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">BUCuC Iftar 2025</div>
-                                        <div class="event-time">10th March, 2025</div>
-                                        <div class="event-by">Monday</div>
+                                        <div class="event-title">Participation at 16th Convocation Volunteers Appreciation Ceremony</div>
+                                        <div class="event-time">15 August, 2025</div>
+                                        <div class="event-by">Friday</div>
                                     </div>
                                 </div>
                                 <!-- Card 4 -->
@@ -3308,18 +3308,18 @@ https://templatemo.com/tm-583-festava-live
                                         style="background-image: url('images/slide5.jpg');"></div>
                                     <div class="event-card-content">
                                         <div class="event-title">বৈশাখী উৎসব ১৪৩২</div>
-                                        <div class="event-time">22nd April, 2025</div>
+                                        <div class="event-time">28th April, 2025</div>
                                         <div class="event-by">Tuesday</div>
                                     </div>
                                 </div>
                                 <!-- Card 5 -->
                                 <div class="event-card" onclick="window.location.href='past_events.html#free-styles'" style="cursor: pointer;">
                                     <div class="event-card-bg"
-                                        style="background-image: url('images/slide1.jpg');"></div>
+                                        style="background-image: url('images/Wild.jpg');"></div>
                                     <div class="event-card-content">
-                                        <div class="event-title">Participation at উচ্ছ্বাসে স্পন্দন by AUSTCC</div>
-                                        <div class="event-time">9th February, 2025</div>
-                                        <div class="event-by">Sunday</div>
+                                        <div class="event-title">Participation at Wild Escape by BUAC</div>
+                                        <div class="event-time">22th April, 2025</div>
+                                        <div class="event-by">Tuesday</div>
                                     </div>
                                 </div>
                                 <!-- See More Button -->
