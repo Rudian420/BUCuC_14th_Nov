@@ -2082,7 +2082,7 @@ https://templatemo.com/tm-583-festava-live
 
                             <p class="text-white">BUCuC has been shaped by countless mentors whose guidance, creativity, and dedication helped build the club’s vibrant legacy. Among them are figures like Rudan Al Amin, former Secretary of PR and Editorial (2017–2018), celebrated for his humor and commanding stage presence; Yash Rohan, ex-Secretary of Marketing, IT, and Archive (2016–2017), who later rose to national prominence as a Bangladeshi actor; and Sadat Kabir Rudro, senior performer (2014–2015) and co-founder of Dhaka Guys Studios, admired for his musical talent. The club’s artistic spirit was further elevated by Miftah Zaman, former Performance Secretary known for transforming BUCuC’s performing arts scene, and by talented performers like Ankan Kumar, now an acclaimed singer. Leaders such as Nafisa Tasnuva Hossain, ex-Secretary of PR and Editorial and now General Manager at Pathao, exemplify the lasting impact of BUCuC’s mentorship.</p>
                             
-                            <pclass="text-white">Though these are only a few names among many, each mentor—past and present—continues to inspire, and together they form the legacy that BUCuC and BRAC University proudly celebrate.</p>
+                            <p class="text-white">Though these are only a few names among many, each mentor—past and present—continues to inspire, and together they form the legacy that BUCuC and BRAC University proudly celebrate.</p>
 
 
                             <h6 class="text-warning mt-4">Future Plans</h6>
