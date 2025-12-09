@@ -5380,6 +5380,37 @@ ${message}
                 });
             }
         });
+
+        // QR Code Hash Navigation Handler
+        // This ensures that when someone scans a QR code with a hash (#section_5),
+        // the page automatically scrolls to that section
+        document.addEventListener('DOMContentLoaded', function() {
+            function scrollToHash() {
+                if (window.location.hash) {
+                    const hash = window.location.hash;
+                    const targetElement = document.querySelector(hash);
+                    
+                    if (targetElement) {
+                        // Wait for page to fully load
+                        setTimeout(function() {
+                            const offsetTop = targetElement.offsetTop - 83; // Account for navbar height
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }, 500); // Small delay to ensure everything is loaded
+                    }
+                }
+            }
+
+            // Handle initial hash on page load
+            scrollToHash();
+
+            // Handle hash changes (if user navigates while on page)
+            window.addEventListener('hashchange', function() {
+                scrollToHash();
+            });
+        });
     </script>
 </body>
 
