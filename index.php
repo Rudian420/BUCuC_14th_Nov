@@ -1837,7 +1837,7 @@ https://templatemo.com/tm-583-festava-live
                     Members</a></li>
             <li><a href="#section_5"><i class="fa fa-calendar"></i>
                     Past Events</a></li>
-            <li><a href="#footer"><i class="fa fa-user-plus"></i> Sign
+            <li><a href="#signup"><i class="fa fa-user-plus"></i> Sign
                     Up</a></li>
         </ul>
         <div class="sidebar-footer">
@@ -1908,7 +1908,7 @@ https://templatemo.com/tm-583-festava-live
                             </li>
                             <li class="nav-item">
                                 <a class="btn custom-btn ms-4"
-                                    href="#footer"
+                                    href="#signup"
                                     style="background: #e76f2c; color: #fff; font-weight: bold; border-radius: 2em; padding: 8px 24px; font-size: 1em;"><?php echo $signupEnabled ? 'Apply Now' : 'Login'; ?></a>
                             </li>
                         </ul>
@@ -1926,7 +1926,7 @@ https://templatemo.com/tm-583-festava-live
                     BUCuC
                 </a>
 
-                <a href="#footer"
+                <a href="#signup"
                     class="btn custom-btn d-lg-none ms-auto me-4"
                     style="background: #e76f2c; color: #fff; font-weight: bold; border-radius: 2em; padding: 8px 24px; font-size: 1em;"><?php echo $signupEnabled ? 'Apply Now' : 'Login'; ?></a>
 
@@ -1976,7 +1976,7 @@ https://templatemo.com/tm-583-festava-live
                         </li>
                     </ul>
 
-                    <a href="#footer"
+                    <a href="#signup"
                         class="btn custom-btn d-lg-block d-none"
                         style="background: #e76f2c; color: #fff; font-weight: bold; border-radius: 2em; padding: 8px 24px; font-size: 1em;"><?php echo $signupEnabled ? 'Apply Now' : 'Login'; ?></a>
                 </div>
@@ -2095,7 +2095,7 @@ https://templatemo.com/tm-583-festava-live
                                 more updates!</p>
 
                             <div class="mt-4">
-                                <a href="#footer"
+                                <a href="#signup"
                                     class="btn btn-outline-light click-scroll"
                                     onclick="window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); return false;">Contact
                                     Us</a>
