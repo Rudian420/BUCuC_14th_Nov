@@ -328,6 +328,64 @@ $signupEnabled = getSignupStatus();
             display: block;
         }
 
+        /* Date Input Styling - Show "Date of Birth" when empty */
+        input[type="date"] {
+            color: #333;
+        }
+
+        input[type="date"]:invalid::-webkit-datetime-edit {
+            color: #6c757d;
+        }
+
+        input[type="date"]:invalid::-webkit-datetime-edit-text {
+            color: #6c757d;
+        }
+
+        input[type="date"]:invalid::-webkit-datetime-edit-month-field {
+            color: #6c757d;
+        }
+
+        input[type="date"]:invalid::-webkit-datetime-edit-day-field {
+            color: #6c757d;
+        }
+
+        input[type="date"]:invalid::-webkit-datetime-edit-year-field {
+            color: #6c757d;
+        }
+
+        /* For Firefox */
+        input[type="date"]:invalid {
+            color: #6c757d;
+        }
+
+        input[type="date"]:valid {
+            color: #333;
+        }
+
+        /* Custom date input wrapper to show "Date of Birth" placeholder */
+        .date-input-wrapper {
+            position: relative;
+        }
+
+        .date-input-wrapper .date-placeholder {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            pointer-events: none;
+            font-size: 1rem;
+            z-index: 1;
+            transition: opacity 0.3s;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0 8px;
+        }
+
+        .date-input-wrapper input[type="date"]:not(:invalid) ~ .date-placeholder,
+        .date-input-wrapper input[type="date"]:focus ~ .date-placeholder {
+            opacity: 0;
+        }
+
         .form-check-input {
             border: 2px solid #e76f2c;
             border-radius: 50%;
@@ -3591,12 +3649,15 @@ https://templatemo.com/tm-583-festava-live
                                             <div class="row">
                                                 <div
                                                     class="col-lg-6 col-md-6 col-12 mb-3">
-                                                    <input type="date"
-                                                        name="signup-dob"
-                                                        id="signup-dob"
-                                                        class="form-control"
-                                                        placeholder="Date of Birth"
-                                                        required>
+                                                    <div class="date-input-wrapper">
+                                                        <input type="date"
+                                                            name="signup-dob"
+                                                            id="signup-dob"
+                                                            class="form-control"
+                                                            required
+                                                            oninvalid="this.setCustomValidity('Please select your date of birth')"
+                                                            oninput="this.setCustomValidity('')">
+                                                    </div>
                                                 </div>
                                                 <div
                                                     class="col-lg-6 col-md-6 col-12 mb-3">
@@ -5355,6 +5416,37 @@ ${message}
 
             // Call the initialization function
             initializeSBMembers();
+        });
+
+        // Date Input Placeholder Handler
+        function hideDatePlaceholder(input) {
+            const placeholder = input.nextElementSibling;
+            if (placeholder && placeholder.classList.contains('date-placeholder')) {
+                if (input.value) {
+                    placeholder.style.opacity = '0';
+                } else {
+                    placeholder.style.opacity = '1';
+                }
+            }
+        }
+
+        // Initialize date placeholder visibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('signup-dob');
+            if (dateInput) {
+                // Check on load
+                hideDatePlaceholder(dateInput);
+                
+                // Check on change
+                dateInput.addEventListener('change', function() {
+                    hideDatePlaceholder(this);
+                });
+                
+                // Check on input
+                dateInput.addEventListener('input', function() {
+                    hideDatePlaceholder(this);
+                });
+            }
         });
 
         // Audio Toggle Functionality
