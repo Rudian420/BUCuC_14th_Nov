@@ -2023,6 +2023,14 @@ https://templatemo.com/tm-583-festava-live
                                 </li>
 
                                 <li class="social-icon-item">
+                                    <a href="https://www.facebook.com/bucucarchive"
+                                        class="social-icon-link"
+                                        target="_blank">
+                                        <span class="bi-facebook"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
                                     <a
                                         href="https://www.youtube.com/@bracuniversityculturalclub717"
                                         class="social-icon-link"
@@ -3807,6 +3815,13 @@ https://templatemo.com/tm-583-festava-live
                             class="social-icon d-flex justify-content-lg-end ms-lg-auto">
                             <li class="social-icon-item">
                                 <a href="https://www.facebook.com/bucuc"
+                                    class="social-icon-link"
+                                    target="_blank">
+                                    <span class="bi-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/bucucarchive"
                                     class="social-icon-link"
                                     target="_blank">
                                     <span class="bi-facebook"></span>
