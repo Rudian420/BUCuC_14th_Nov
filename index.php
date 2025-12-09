@@ -4211,6 +4211,10 @@ ${message}
                     text: 'Creative'
                 },
                 {
+                    value: 'Finance',
+                    text: 'Finance'
+                },
+                {
                     value: 'Performance',
                     text: 'Performance'
                 },
