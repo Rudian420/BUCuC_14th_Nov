@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($checkEmailStmt->fetch()) {
             $_SESSION['signup_error'] = 'Gsuite already registered';
-            header('Location: ../index.php#footer');
+            header('Location: ../index.php#signup');
             exit();
         }
         
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($checkIdStmt->fetch()) {
             $_SESSION['signup_error'] = 'University ID already registered';
-            header('Location: ../index.php#footer');
+            header('Location: ../index.php#signup');
             exit();
         }
         
@@ -72,28 +72,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($stmt->execute()) {
             $_SESSION['signup_success'] = 'Registration successful! Welcome to BRAC University Cultural Club. Your membership application has been submitted successfully.';
-            header('Location: ../index.php#footer');
+            header('Location: ../index.php#signup');
             exit();
         } else {
             $_SESSION['signup_error'] = 'Registration failed. Please try again.';
-            header('Location: ../index.php#footer');
+            header('Location: ../index.php#signup');
             exit();
         }
         
     } catch (PDOException $e) {
         error_log('Database error in signup: ' . $e->getMessage());
         $_SESSION['signup_error'] = 'Database error: ' . $e->getMessage();
-        header('Location: ../index.php#footer');
+        header('Location: ../index.php#signup');
         exit();
     } catch (Exception $e) {
         error_log('General error in signup: ' . $e->getMessage());
         $_SESSION['signup_error'] = 'Error: ' . $e->getMessage();
-        header('Location: ../index.php#footer');
+        header('Location: ../index.php#signup');
         exit();
     }
 } else {
     $_SESSION['signup_error'] = 'Invalid request method';
-    header('Location: ../index.php#footer');
+    header('Location: ../index.php#signup');
     exit();
 }
 ?>

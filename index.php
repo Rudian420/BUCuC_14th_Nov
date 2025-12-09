@@ -1837,7 +1837,7 @@ https://templatemo.com/tm-583-festava-live
                     Members</a></li>
             <li><a href="#section_5"><i class="fa fa-calendar"></i>
                     Past Events</a></li>
-            <li><a href="#signup"><i class="fa fa-user-plus"></i> Sign
+            <li><a href="#footer"><i class="fa fa-user-plus"></i> Sign
                     Up</a></li>
         </ul>
         <div class="sidebar-footer">
@@ -1926,7 +1926,7 @@ https://templatemo.com/tm-583-festava-live
                     BUCuC
                 </a>
 
-                <a href="#signup"
+                <a href="#footer"
                     class="btn custom-btn d-lg-none ms-auto me-4"
                     style="background: #e76f2c; color: #fff; font-weight: bold; border-radius: 2em; padding: 8px 24px; font-size: 1em;"><?php echo $signupEnabled ? 'Apply Now' : 'Login'; ?></a>
 
@@ -2095,7 +2095,7 @@ https://templatemo.com/tm-583-festava-live
                                 more updates!</p>
 
                             <div class="mt-4">
-                                <a href="#signup"
+                                <a href="#footer"
                                     class="btn btn-outline-light click-scroll"
                                     onclick="window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'}); return false;">Contact
                                     Us</a>
@@ -3472,7 +3472,7 @@ https://templatemo.com/tm-583-festava-live
             </div>
         </section>
 
-        <section class="contact-section section-padding" id="footer">
+        <section class="contact-section section-padding" id="signup">
             <div class="container">
                 <div class="row">
 
@@ -3887,7 +3887,7 @@ https://templatemo.com/tm-583-festava-live
 
                         <li class="site-footer-link-item">
                             <a href="#very-bottom"
-                                class="site-footer-link click-scroll">Contact</a>
+                                class="site-footer-link click-scroll" href="#signup">Contact</a>
                         </li>
                     </ul>
                 </div>
