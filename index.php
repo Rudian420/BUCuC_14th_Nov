@@ -2467,11 +2467,7 @@ https://templatemo.com/tm-583-festava-live
                                                         <div class="name">Shreya Sangbriti</div>
                                                     </div>
                                                 </div>
-                                                <div class="col-6 col-md-3 text-center">
-                                                    <div class="panel-card"><img src="images/Panel_24_25/Secreteries/Syed_Ariful_Islam_Aowan.jpg" class="img-fluid" alt="Syed_Ariful_Islam_Aowan.jpg">
-                                                        <div class="name">Syed Ariful Islam Aowan</div>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="col-6 col-md-3 text-center">
                                                     <div class="panel-card"><img src="images/Panel_24_25/Secreteries/Tamejul_habib.jpg" class="img-fluid" alt="Tamejul_habib.jpg">
                                                         <div class="name">Tamejul habib</div>
@@ -3193,25 +3189,7 @@ https://templatemo.com/tm-583-festava-live
                                             Performance (Music)</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        src="images/Panel_24_25/Secreteries/Syed_Ariful_Islam_Aowan.jpg"
-                                        onerror="this.src='images/placeholder.png'" />
-                                    <div class="overlay">
-                                        <a
-                                            href="https://www.facebook.com/syedariful.aowan"
-                                            target="_blank">
-                                            <ion-icon name="logo-facebook"
-                                                style="color: #1877f2"></ion-icon>
-                                        </a>
-                                    </div>
-                                    <div class="member-name">
-                                        <span class="name">Syed Ariful Islam
-                                            Aowan</span>
-                                        <span class="position">Secretary of
-                                            Performance (Music)</span>
-                                    </div>
-                                </div>
+                                
                                 <div class="swiper-slide">
                                     <img src="images/Panel_24_25/Secreteries/Rubaba_Khijir_Nusheen.jpg"
                                         onerror="this.src='images/placeholder.png'" />
@@ -3266,23 +3244,7 @@ https://templatemo.com/tm-583-festava-live
                                             Performance (Dance)</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="images/Panel_24_25/Secreteries/Jubair_Rahman.jpg"
-                                        onerror="this.src='images/placeholder.png'" />
-                                    <div class="overlay">
-                                        <a
-                                            href="https://www.facebook.com/jubair.rahman.765511"
-                                            target="_blank">
-                                            <ion-icon name="logo-facebook"
-                                                style="color: #1877f2"></ion-icon>
-                                        </a>
-                                    </div>
-                                    <div class="member-name">
-                                        <span class="name">Jubair Rahman</span>
-                                        <span class="position">Secretary of
-                                            Performance (Dance)</span>
-                                    </div>
-                                </div>
+                                
                                 <div class="swiper-slide">
                                     <img src="images/Panel_24_25/Secreteries/Fabiha_Bushra_Ali.jpg"
                                         onerror="this.src='images/placeholder.png'" />
@@ -4643,10 +4605,6 @@ ${message}
                         {
                             name: 'Jareen Tasnim Bushra',
                             image: 'images/Panel_24_25/Secreteries/Jareen_Tasnim_Bushra.jpg'
-                        },
-                        {
-                            name: 'Jubair Rahman',
-                            image: 'images/Panel_24_25/Secreteries/Jubair_Rahman.jpg'
                         },
                         {
                             name: 'Rudian Ahmed',
